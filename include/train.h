@@ -15,6 +15,8 @@ class Train {
   Train();
   void addCar(bool light); // добавить вагон с начальным состоянием лампочки
   int getLength();          // вычислить длину поезда
-  int getOpCount();         // вернуть число переходов (из вагона в вагон)
+  int getOpCount() {
+   return countOp;
+  }         // вернуть число переходов (из вагона в вагон)
 };
 #endif  // INCLUDE_TRAIN_H_
